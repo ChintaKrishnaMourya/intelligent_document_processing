@@ -5,6 +5,7 @@ import openai
 import pandas as pd
 from ocr import process_pdf
 from gptparser import gpt_parser
+import time
 
 # Define your OpenAI API key
 api_key = st.secrets["api_key"]
