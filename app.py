@@ -3,8 +3,8 @@ import tempfile
 import os
 import openai
 import pandas as pd
-from ocr import *
-from gptparser import *
+from ocr import process_pdf
+from gptparser import gpt_parser
 
 # Define your OpenAI API key
 api_key = st.secrets["api_key"]
