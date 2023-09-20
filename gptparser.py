@@ -1,8 +1,7 @@
 import openai
 import json
-import streamlit
+import streamlit as st
 import pandas as pd
-from ocr import *
 
 openai.api_key = st.secrets["openai_key"]
 
