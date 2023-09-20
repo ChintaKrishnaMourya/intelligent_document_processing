@@ -9,7 +9,7 @@ from gptparser import gpt_parser
 # Define your OpenAI API key
 api_key = st.secrets["api_key"]
 openai.api_key = st.secrets["api_key"]
-os.environ["OPENAI_API_KEY]=st.secrets["api_key"]
+os.environ["OPENAI_API_KEY]= api_key
 
 
 st.set_page_config(page_title="Document Parser", page_icon="📄")
