@@ -3,6 +3,7 @@ import json
 import streamlit as st
 import pandas as pd
 import os
+import time
 
 api_key = st.secrets["api_key"]
 openai.api_key = api_key
