@@ -3,8 +3,9 @@ import json
 import streamlit as st
 import pandas as pd
 import os
-openai.api_key = st.secrets["api_key"]
-os.environ["OPENAI_API_KEY]=st.secrets["api_key"]
+
+api_key = st.secrets["api_key"]
+openai.api_key = api_key
 
 def gpt_parser(text):
   prompt='''You are given a text that is extrcted by using an OCR Tool. The extracted text may sometimes irregular or unclear. So try to understand them interms of bill of lading.
