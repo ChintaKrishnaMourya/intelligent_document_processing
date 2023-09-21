@@ -9,7 +9,7 @@ api_key = st.secrets["api_key"]
 openai.api_key = api_key
 
 def gpt_parser(text):
-    prompt='''You are given a text that is extrcted by using an OCR Tool. The extracted text may sometimes irregular or unclear. So try to understand them interms of bill of lading.
+    prompt='''You are given a English text that is extrcted by using an OCR Tool. The extracted text may sometimes irregular or unclear. So try to understand them interms of bill of lading.
   Now, your task is to give right values for the given keys.
   Keys : 
   - "Invoice_Number"
