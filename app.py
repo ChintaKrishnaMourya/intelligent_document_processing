@@ -24,7 +24,7 @@ if st.button("Submit"):
                 f.write(docu.read())
 
             extracted_text = process_pdf(file_path)
-            st.write("Text Extracted\n")
+            st.write(f"Text Extracted\n : {extracted_text}\n")
             parsed_df = gpt_parser(extracted_text)
             st.write("Information Parsed\n")
             # Display the parsed JSON
